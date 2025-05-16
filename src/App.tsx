@@ -9,6 +9,9 @@ import Profile from "./pages/Profile";
 import Tracker from "./pages/Tracker";
 import About from "./pages/About";
 import Assessment from "./pages/Assessment";
+import CycleAssessment from "./pages/assessments/CycleAssessment";
+import HormonalAssessment from "./pages/assessments/HormonalAssessment";
+import FertilityAssessment from "./pages/assessments/FertilityAssessment";
 import Resources from "./pages/Resources";
 import NotFound from "./pages/NotFound";
 import { UserProvider } from "./contexts/UserContext";
@@ -32,6 +35,9 @@ const App = () => (
                 <Route path="/tracker" element={<Tracker />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/assessment" element={<Assessment />} />
+                <Route path="/assessment/cycle" element={<CycleAssessment />} />
+                <Route path="/assessment/hormonal" element={<HormonalAssessment />} />
+                <Route path="/assessment/fertility" element={<FertilityAssessment />} />
                 <Route path="/resources" element={<Resources />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>

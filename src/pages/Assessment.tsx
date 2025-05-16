@@ -2,8 +2,15 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const Assessment = () => {
+  const navigate = useNavigate();
+
+  const handleStartAssessment = (type: string) => {
+    navigate(`/assessment/${type}`);
+  };
+
   return (
     <div className="container mx-auto py-8 px-4">
       <div className="mb-8">
@@ -28,7 +35,12 @@ const Assessment = () => {
             </p>
           </CardContent>
           <CardFooter>
-            <Button className="w-full">Start Assessment</Button>
+            <Button 
+              className="w-full" 
+              onClick={() => handleStartAssessment('cycle')}
+            >
+              Start Assessment
+            </Button>
           </CardFooter>
         </Card>
         
@@ -46,7 +58,12 @@ const Assessment = () => {
             </p>
           </CardContent>
           <CardFooter>
-            <Button className="w-full">Start Assessment</Button>
+            <Button 
+              className="w-full"
+              onClick={() => handleStartAssessment('hormonal')}
+            >
+              Start Assessment
+            </Button>
           </CardFooter>
         </Card>
         
@@ -64,7 +81,12 @@ const Assessment = () => {
             </p>
           </CardContent>
           <CardFooter>
-            <Button className="w-full">Start Assessment</Button>
+            <Button 
+              className="w-full"
+              onClick={() => handleStartAssessment('fertility')}
+            >
+              Start Assessment
+            </Button>
           </CardFooter>
         </Card>
       </div>
