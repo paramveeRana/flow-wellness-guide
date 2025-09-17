@@ -21,7 +21,7 @@ const About = () => {
           
           <div className="prose">
             <p>
-              Hello! I'm Vidushi Gupta, a final year BTech student at Medicaps University. 
+              Hello! I'm Aastha Maheshvari, a final year BTech student at Medicaps University. 
               I'm passionate about creating intuitive and helpful applications that can make 
               a positive impact on people's lives.
             </p>
